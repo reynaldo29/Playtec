@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>PlayTecDuino | Herramientas PlayTec</title>
+
+  <link rel="shortcut icon" href="https://cursos.playtecedu.com/static/media/playtecrobot2.4d2eec53.gif">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/TemplateData/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="curvy-bg"></div>
+
+  <div class="container">
+    <header>
+      <img src="http://playtecedu.com/plugins/blocklyduino/media/playtecrobot.gif" alt="pad" width="80" height="auto"
+        class="logo">
+      <img src="http://playtecedu.com/plugins/blocklyduino/logo.png" width="300" height="60">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#instrucciones">Instrucciones</a></li>
+        <li><a href="#caracteristicas">Caracteristicas</a></li>
+        <li><a href="https://www.arduino.cc/">Simulador</a></li>
+        <li><a href="https://playtecedu.com/herramientas">Herramientas PlayTec</a></li>
+        <li><a href="https://playtecedu.com/herramientas">Contacto</a></li>
+      </ul>
+      <input type="checkbox" id="toggle">
+      <button type="button" id="btn">
+        <a href="#">Juguemos</a>
+      </button>
+    </header>
+    <!-- header ends here -->
+
+    <div class="content-wrapper">
+      <div class="content-desc">
+        <h3>Nuevo Simulador</h3>
+        <h1>Muevete hacia adelante, atrás, gira a la derecha, izquierda y detente. </h1>
+        <button type="button" id="btn2">
+          <a href="#">Let's Play</a>
+          <span><a href="#"><i class="fas fa-arrow-right"></i></a></span>
+        </button>
+
+        <!-- radio -->
+        <div class="radio">
+          <img src="images/radio.png" alt="radio" width="100" height="auto">
+          <div class="titi">
+            <h2>Suscribete al canal de PlayTec para mayor informacion</h2>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/playtec.edu"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/c/PlayTecEDU"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+          
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- hero section right here -->
+
+    </div>
+  </div>
+  <img src="images/hombre.png" alt="" class="cap-man" width="200" height="auto">
+  <script src="index.js"></script>
+
+
+  <!----Instrucction section start---->
+  <section id="instrucciones" class="about">
+    <div class="main">
+      <img src="images/r4p.png">
+      <div class="about-text">
+        <h2>Instrucciones</h2>
+        <h5>Modo <span>& Uso</span></h5>
+        <p>1. Inicializa la lista de comandos de bloque y jugador</p>
+        <p>2. Dale "Click" en simular</p>
+        <p>3. Ejecuta los comandos de la lista de comandos </p>
+        <a class="button2" href="#" type="button">Empecemos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-----caracteristics section start----------->
+  <section id="caracteristicas">
+    <div class="service">
+      <div class="title">
+        <h2>Caracteristicas</h2>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Aprendizaje rapido</h5>
+          <div class="pra">
+            <p>Programación más entendible e intuitiva entendible para niños y adolescentes.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Leer mas</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h5>Facil Exportacion</h5>
+          <div class="pra">
+            <p>Exportación de código desde la plataforma a Arduino para su posterior uso en formato físico.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Leer mas</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-bell"></i>
+          <h5>Accesible para todos</h5>
+          <div class="pra">
+            <p>Plataforma de desarrollo por código en bloques más accesible para los alumnos.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Leer mas</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+        
+      </div>
+    </div>
+  </section>
+
+  </div>
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+    <div id="unity-loading-bar">
+      <div id="playtec-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+
+    <div id="unity-mobile-warning">
+      PlayTecDuino no es compatible con dispositivos móviles.
+    </div>
+    <div id="unity-footer">
+      <div id="unity-fullscreen-button"></div>
+      <div id="unity-build-title"></div>
+    </div>
+  </div>
+  <script>
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/PlaytecduinoCopiarPegar.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/PlaytecduinoCopiarPegar.data",
+      frameworkUrl: buildUrl + "/PlaytecduinoCopiarPegar.framework.js",
+      codeUrl: buildUrl + "/PlaytecduinoCopiarPegar.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "PlaytecEdu",
+      productVersion: "0.1",
+    };
+
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+    var mobileWarning = document.querySelector("#unity-mobile-warning");
+    var w = screen.width;
+    var h = screen.height;
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      config.devicePixelRatio = 1;
+      mobileWarning.style.display = "block";
+      setTimeout(() => {
+        mobileWarning.style.display = "none";
+      }, 5000);
+
+    } else {
+      canvas.style.width = "960px";
+      canvas.style.height = "600px";
+    }
+    loadingBar.style.display = "block";
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        progressBarFull.style.width = 100 * progress + "%";
+      }).then((unityInstance) => {
+        loadingBar.style.display = "none";
+        fullscreenButton.onclick = () => {
+          unityInstance.SetFullscreen(1);
+        };
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+
+    //dark mode
+    const toggle = document.getElementById('toggle');
+    const body = document.getElementsByTagName('body');
+    
+
+    toggle.addEventListener('click', function () {
+      body[0].classList.toggle('dark-theme');
+      
+    });
+
+    const swingIt = document.getElementById('swing-it');
+    const controller = document.querySelector('.controller');
+
+
+    swingIt.addEventListener('click', function () {
+      controller.classList.add('gamepad');
+    })
+  </script>
+</body>
+
+</html>
